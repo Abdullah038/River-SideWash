@@ -1,0 +1,155 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #555;
+}
+
+.serivesh1 {
+    text-align: center;
+    font-size: 3em;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-shadow: 3px 3px 0px #e1e2e4;
+    letter-spacing: 1.5px;
+    border-bottom: 2px solid #999fa6;
+    margin: 20px 0px 0px 0px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.box {
+    flex: 1;
+    min-width: 280px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.box:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+.box h2 {
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    color: #373737; /* This sets the color for all h2 inside .box */
+}
+
+.box:nth-child(1) {
+    background: linear-gradient(to bottom, #66d9ff, #b3ecff);
+}
+
+
+.box:nth-child(2) {
+    background: linear-gradient(to bottom, #f6d365, #fda085);
+}
+
+
+
+.box:nth-child(3) {
+    background: linear-gradient(to bottom, #e0e0e0, #c0c0c0);
+}
+
+
+.box ul {
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+    max-height: 1000px;
+    transition: max-height 0.6s ease-in-out;
+}
+
+.box.open ul {
+    max-height: 0;
+}
+
+.box li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.3s ease;
+}
+
+.box li:hover {
+    background-color: #fafafa;
+}
+
+.box li:last-child {
+    border-bottom: none;
+}
+
+.box li strong {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #373737;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .box ul {
+        max-height: 0;
+    }
+
+    .box.open ul {
+        max-height: 700px;
+        transition: max-height 0.6s ease-in-out;
+    }
+}
+
+.button-container {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.bookNow-Services {
+    display: inline-block;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2em; /* increased font size */
+    text-align: center;
+    color: #ffffff;
+    background-color: #1b8f31;
+    border: none;
+    padding: 15px 30px; /* increased padding */
+    margin: 10px 0;
+    border-radius: 8px; /* increased border radius */
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.bookNow-Services:hover {
+    background-color: #2f803e;
+    transform: translateY(-3px);
+}
+
+.arrow {
+    display: none !important;
+    float: right;
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .arrow {
+        display: inline-block !important;
+    }
+}
+
+.box.open .arrow {
+    transform: rotate(180deg);
+}
+

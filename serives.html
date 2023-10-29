@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="services-css.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Services</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="nav-logo">
+                <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="serives.html">Services</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+                <li><a href="booknow.html" class="book-now">Book Now</a></li>
+            </ul>
+        </nav>
+    
+        <section id="menu">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div class="bars">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+    
+            <div class="mobile-menu">
+                <div class="x-icon" onclick="toggleMenu()">
+                    <div class="x-bar x-bar1"></div>
+                    <div class="x-bar x-bar2"></div>
+                </div>
+    
+                <a href="index.html">Home</a>
+                <a href="serives.html">Services</a>
+                <a href="Contact.html">Contact Us</a>
+                <a href="booknow.html">Book Now</a>
+            </div>
+        </section>
+    </header>
+
+    <h1 class="serivesh1">Services</h1>
+    <section class="services">
+        <div class="box">
+            <h2>Silver - $14.99<i class="arrow fa-solid fa-arrow-down"></i></h2>
+            <ul>
+                <li>30 minutes</li>
+                <li>Pre-Rinse</li>
+                <li>Cannon Foam Blaster</li>
+                <li>High Pressure Wash</li>
+                <li>Car Wax Shield</li>
+                <li>Air and Hand Dried</li>
+                <li><strong>Add on:</strong></li>
+                <li>Hanging Air Freshener - $1.99</li>
+                <li>Tire Shine & Protection Shield - $3.99</li>
+            </ul>
+        </div>
+        <div class="box">
+            <h2>Gold - $20.99<i class="arrow fa-solid fa-arrow-down"></i></h2>
+            <ul>
+                <li>45 minutes</li>
+                <li>Pre-Rinse</li>
+                <li>Cannon Foam Blaster</li>
+                <li>High Pressure Wash</li>
+                <li>Car Wax Shield</li>
+                <li>Air and Hand Dried</li>
+                <li>Hanging Air Freshener</li>
+                <li>Tire Shine & Protection Shield</li>
+                <li><strong>Add on:</strong></li>
+                <li>Floor Mat Clean - $2.99</li>
+            </ul>
+        </div>
+        <div class="box">
+            <h2>Platinum Full<i class="arrow fa-solid fa-arrow-down"></i></h2>
+            <ul>
+                <li>Car ($59.99) 2-3 Hours</li>
+                <li>SUV ($69.99) 3-4 Hours</li>
+                <li>Van ($89.99) 4-6 Hours</li>
+                <li>Pickup Truck ($99.99) 5-7 Hours</li>
+                <li></li>
+                <li>Pre-Rinse</li>
+                <li>Cannon Foam Blaster</li>
+                <li>High Pressure Wash</li>
+                <li>Car Wax Shield</li>
+                <li>Air and Hand Dried</li>
+                <li>Hanging Air Freshener</li>
+                <li>Tire Shine & Protection Shield</li>
+                <li>Floor Mat Clean</li>
+                <li>Vacuum Floor & Seats</li>
+                <li>Steamed Floor & Seats</li>
+                <li>Window/Mirror & Screen Shine</li>
+                <li>Dashboard & Door Frame Shine</li>
+                <li></li>
+                <li>10% Student & Senior Discount *Student/Senior I.D Required*</li>
+            </ul>
+        </div>
+
+
+    </section>
+
+    <div class="button-container">
+        <a href="booknow.html"><button class="bookNow-Services">Book Now</button></a>
+    </div>
+
+
+    <script>
+        document.querySelectorAll('.box').forEach(box => {
+            box.addEventListener('click', function () {
+                toggleBox(this);
+            });
+        });
+
+        function toggleBox(box) {
+            if (window.innerWidth <= 768) {
+                box.classList.toggle('open');
+            }
+        }
+
+
+    </script>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img id="logo-footer" src="images/logo.png" alt="Logo">
+                <p id="aboutUs-footer">Riverside Wash Company is your premier destination for top-notch car detailing
+                    services. We take pride in providing meticulous attention to detail to ensure your vehicle looks as
+                    good as new.</p>
+            </div>
+            <div class="footer-services">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="services/car-detailing.html">Car Detailing</a></li>
+                    <li><a href="services/truck-wash.html">Truck wash</a></li>
+                    <li><a href="services/exterior-house.html">Exterior House</a></li>
+                    <li><a href="services/patio.html">Patio</a></li>
+                    <li><a href="services/driveway.html">Driveway</a></li>
+                    <li><a href="services/walkway.html">Walkway</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><a href="mailto:example@email.com">Email: example@email.com</a></li>
+                    <li><a href="tel:+1234567890">Phone: (123) 456-7890</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2023 All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="menu.js"></script>
+</body>
+
+</html>

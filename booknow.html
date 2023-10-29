@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="booknow-css.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="menu.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Book Now</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="nav-logo">
+                <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="serives.html">Services</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+                <li><a href="booknow.html" class="book-now">Book Now</a></li>
+            </ul>
+        </nav>
+    
+        <section id="menu">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div class="bars">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+    
+            <div class="mobile-menu">
+                <div class="x-icon" onclick="toggleMenu()">
+                    <div class="x-bar x-bar1"></div>
+                    <div class="x-bar x-bar2"></div>
+                </div>
+    
+                <a href="index.html">Home</a>
+                <a href="serives.html">Services</a>
+                <a href="Contact.html">Contact Us</a>
+                <a href="booknow.html">Book Now</a>
+            </div>
+        </section>
+    
+    </header>
+
+    <div class="container">
+        <div class="form-container">
+            <h2>Book Now</h2>
+            <form>
+                <div class="first-col">
+                    <div class="input-icon">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Full Name" id="name" name="name" required>
+                    </div>
+                </div>
+
+                <div class="second-col">
+                    <div class="input-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="E-mail Address" id="email" name="email" required>
+                    </div>
+                </div>
+
+                <div class="first-col">
+                    <div class="input-icon">
+                        <i class="fa-solid fa-phone"></i>
+                        <input type="tel" placeholder="Phone No." id="phone" name="phone">
+                    </div>
+                </div>
+
+                <div class="second-col">
+                    <div class="input-icon">
+                        <i class="fa-solid fa-map-marker-alt"></i>
+                        <input type="text" placeholder="Location" id="location" name="location" required>
+                    </div>
+                </div>
+
+                <div class="first-col">
+                    <div class="input-icon" id="topServices">
+                        <i class="fa-solid fa-calendar-check"></i>
+                        <select id="ourServices" class="bothServices" name="services" required>
+                            <option class="placeholder" value="" disabled selected>Choose a Service</option>
+                            <option value="car_detailing">Car Detailing</option>
+                            <option value="patio_cleaning">Patio Cleaning</option>
+                            <option value="walkway_cleaning">Walkway Cleaning</option>
+                            <option value="driveway_cleaning">Driveway Cleaning</option>
+                            <option value="house_exterior_cleaning">House Exterior Cleaning</option>
+                        </select>
+                    </div>
+                    <div class="input-icon">
+                        <i class="fa-solid fa-list-ul"></i>
+                        <select id="services" class="bothServices" name="services" required disabled>
+                            <option class="placeholder" value="" disabled selected>Services</option>
+                            <option value="service1">Silver - $14.99</option>
+                            <option value="service2">Gold - $20.99</option>
+                            <option value="service3">Platinum Car - $59.99</option>
+                            <option value="service4">Platinum SUV - $69.99</option>
+                            <option value="service5">Platinum Van - $89.99</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="second-col">
+                    <label>Add ons:</label>
+                    <div class="checkbox-container">
+                        <div id="airFreshenerDiv" class="disabled">
+                            <input type="checkbox" id="airFreshener" name="addons" value="airFreshener" disabled>
+                            <label for="airFreshener">Hanging Air Freshener - $1.99</label>
+                        </div>
+                        <div id="tireShineDiv" class="disabled">
+                            <input type="checkbox" id="tireShine" name="addons" value="tireShine" disabled>
+                            <label for="tireShine">Tire Shine & Protection Shield - $3.99</label>
+                        </div>
+                
+                        <div id="floorMatCleanDiv" class="disabled">
+                            <input type="checkbox" id="floorMatClean" name="addons" value="floorMatClean" disabled>
+                            <label for="floorMatClean">Floor Mat Clean - $2.99</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="all-col-comment">
+                    <div class="input-icon">
+                        <i id="commentIcon" class="fa-solid fa-comment"></i>
+                        <textarea id="comments" placeholder="Additional Requests" name="comments" rows="4"></textarea>
+                    </div>
+                </div>
+
+                <div class="all-col-btn">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img id="logo-footer" src="images/logo.png" alt="Logo">
+                <p id="aboutUs-footer">Riverside Wash Company is your premier destination for top-notch car detailing
+                    services. We take pride in providing meticulous attention to detail to ensure your vehicle looks as
+                    good as new.</p>
+            </div>
+            <div class="footer-services">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="services/car-detailing.html">Car Detailing</a></li>
+                    <li><a href="services/truck-wash.html">Truck wash</a></li>
+                    <li><a href="services/exterior-house.html">Exterior House</a></li>
+                    <li><a href="services/patio.html">Patio</a></li>
+                    <li><a href="services/driveway.html">Driveway</a></li>
+                    <li><a href="services/walkway.html">Walkway</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><a href="mailto:example@email.com">Email: example@email.com</a></li>
+                    <li><a href="tel:+1234567890">Phone: (123) 456-7890</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2023 All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="booknow-script.js"></script>
+    <script src="menu.js"></script>
+</body>
+
+</html>

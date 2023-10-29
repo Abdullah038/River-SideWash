@@ -1,0 +1,113 @@
+.footer {
+    background-color: #34495e;
+    background-image: url('images/stacked-peaks-haikei.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ecf0f1;
+    padding: 20px 0 0 0;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    z-index: 0;
+    border-top: 5px solid #137525;
+}
+
+  
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+  
+.footer-logo {
+    text-align: left;
+}
+  
+#aboutUs-footer {
+    width: 300px;
+    line-height: 1.6;
+}
+  
+.footer-services,
+.footer-social,
+.footer-contact {
+    list-style: none;
+    padding: 0;
+}
+  
+.footer-services ul,
+.footer-social ul,
+.footer-contact ul {
+    list-style: none;
+    padding: 0;
+    
+}
+  
+.footer-services h4,
+.footer-social h4,
+.footer-contact h4 {
+    color: #167d29;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+  
+.footer-services li,
+.footer-social li,
+.footer-contact li {
+    margin-bottom: 8px;
+}
+  
+.footer-social li {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+  
+.footer-social li a,
+.footer-contact li a,
+.footer-services li a {
+    color: #bdc3c7;
+    transition: color 0.3s;
+
+}
+a {
+    text-decoration: none;
+ }
+  
+.footer-social li a:hover,
+.footer-contact li a:hover,
+.footer-services li a:hover {
+    color: #1b8f31;
+}
+  
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #2c3e50;
+    color: #bdc3c7;
+}
+  
+#logo-footer {
+    height: 100px;
+}
+  
+@media (max-width: 850px) {
+    .footer-container {
+        flex-direction: column;
+    }
+  
+    .footer-logo,
+    .footer-services,
+    .footer-social,
+    .footer-contact {
+        margin-bottom: 20px;
+    }
+  
+    .footer-social li {
+        display: block;
+        margin-bottom: 5px;
+    }
+}

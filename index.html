@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="testimonial.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="menu.css">
+
+    <title>River SideWash</title>
+</head>
+
+<body>
+    <nav class="nav-bar">
+            <div class="nav-logo">
+                <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="serives.html">Services</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+                <li><a href="booknow.html" class="book-now">Book Now</a></li>
+            </ul>
+        </nav>
+        
+        <section id="menu">
+            <div id="index-menu-icon" class="menu-icon" onclick="toggleMenu()">
+                <div class="bars">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+
+            <div class="mobile-menu">
+                <div class="x-icon" onclick="toggleMenu()">
+                    <div class="x-bar x-bar1"></div>
+                    <div class="x-bar x-bar2"></div>
+                </div>
+
+                <a href="index.html">Home</a>
+                <a href="serives.html">Services</a>
+                <a href="Contact.html">Contact Us</a>
+                <a href="booknow.html">Book Now</a>
+            </div>
+        </section>
+        
+        <section id="top-screen">
+        <section id="first-sec">
+            <div class="bg-image"></div>
+            <div class="overlay"></div>
+
+            <div class="info-container">
+                <div class="company-info">
+                    <h1>River SideWash</h1>
+                    <p>Bringing the shine back to your ride!</p>
+                </div>
+                <div class="quote-form-container">
+                    <div class="quote-form-header" onclick="toggleQuoteForm(this)">
+                        <h2>Free Quote<i class="arrow fa-solid fa-arrow-down"></i></h2>
+                    </div>
+                    <div class="quote-form">
+                        <form>
+                            <input type="text" name="full_name" placeholder="Full Name" required>
+                            <input type="email" name="email" placeholder="Email" required>
+                            <input type="tel" name="phone" placeholder="Phone" required>
+                            <input type="text" name="location" placeholder="Location" required>
+                            <textarea name="comment" placeholder="Comment" rows="3" required></textarea>
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="main-info">
+                <div class="contact-container">
+                    <a href="tel:+1234567890" class="contact-icon phone">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                    <a href="mailto:example@email.com" class="contact-icon email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+
+                <a href="#second-sec" class="scroll-arrow"><i class="fa-solid fa-angles-down"></i></a>
+            </div>
+        </section>
+    </section>
+    <section class="services-section">
+        <section id="second-sec">
+
+            <h2 class="ourServices">Our Services</h2>
+            <div class="services-container container">
+                <div class="service-item" onclick="toggleServiceItem(this)">
+                    <h4>Car Detailing<i class="arrow fa-solid fa-arrow-down"></i></h4>
+                    <div class="service-content">
+                        <img src="images/carDetail2.png" alt="Service 1">
+                        <p class="service-p">Experience the ultimate in car care with our meticulous detailing services.
+                            From comprehensive interior rejuvenation to exterior enhancement, we bring out the true
+                            beauty
+                            of your vehicle, ensuring it shines like never before.</p>
+                    </div>
+                </div>
+                <div class="service-item" onclick="toggleServiceItem(this)">
+                    <h4>Patio<i class="arrow fa-solid fa-arrow-down"></i></h4>
+                    <div class="service-content">
+                        <img src="images/patio1.png" alt="Service 2">
+                        <p class="service-p">Elevate your outdoor space with our professional patio cleaning services.
+                            Our
+                            expert team will remove built-up dirt, grime, and stains, restoring your patio to its
+                            pristine
+                            condition, making it the perfect place to relax and entertain.</p>
+                    </div>
+                </div>
+                <div class="service-item" onclick="toggleServiceItem(this)">
+                    <h4>Walkway<i class="arrow fa-solid fa-arrow-down"></i></h4>
+                    <div class="service-content">
+                        <img src="images/walkway.jpg" alt="Service 3">
+                        <p class="service-p">Transform your walkway with our top-tier cleaning services. We'll banish
+                            dirt,
+                            mold, and unsightly stains, leaving your path not only impeccably clean but also enhancing
+                            the
+                            overall curb appeal of your property.</p>
+                    </div>
+                </div>
+                <div class="service-item" onclick="toggleServiceItem(this)">
+                    <h4>Driveway<i class="arrow fa-solid fa-arrow-down"></i></h4>
+                    <div class="service-content">
+                        <img src="images/driveway.jpg" alt="Service 4">
+                        <p class="service-p">Revitalize your driveway with our expert cleaning services. We'll eliminate
+                            tough stains, oil marks, and grime, giving your home a fresh and welcoming look while
+                            extending
+                            the life of your driveway's surface.</p>
+                    </div>
+                </div>
+                <div class="service-item" onclick="toggleServiceItem(this)">
+                    <h4>House Exterior<i class="arrow fa-solid fa-arrow-down"></i></h4>
+                    <div class="service-content">
+                        <img src="images/exterior.jpg" alt="Service 5">
+                        <p class="service-p">Enhance your home's curb appeal with our professional house exterior
+                            cleaning.
+                            Our meticulous services will remove dirt, mildew, and stains, leaving your house looking
+                            refreshed and inviting, all while preserving its long-term beauty.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-title">
+                            <h2 class="ourServices">Testimonials</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="owl-carousel client-testimonial-carousel">
+                            <div class="single-testimonial-item">
+                                <p>“River SideWash services are amazing. My concrete patio was so dirty. Living in
+                                    an
+                                    old house all the years of buildup was wiped away when they pressured washed the
+                                    patio. What a difference in colour. They also pulled the weed out from between
+                                    the
+                                    concrete to make it look much neater. I would definitely use their services
+                                    again.
+                                    The entrance of my house looks so clean now!”</p>
+                                <h3>Dina Khokhar</h3>
+                            </div>
+                            <div class="single-testimonial-item">
+                                <p>“Contacted River SideWash based on a referral, best decision ever. I drive Uber
+                                    so my
+                                    SUV gets fairly dirty, the owner went above and beyond to get my car clean, with
+                                    so
+                                    much attention to detail that can’t even be expressed into words. Since I was so
+                                    impressed with the service, I decided to get my sedan washed by them as well and
+                                    again the service was nothing short of perfect. They even got the salt stain out
+                                    of
+                                    the carpet that I been trying to get out for years now. My experience with River
+                                    SideWash has been the definition of impeccable! I can without a doubt recommend
+                                    River SideWash to anyone who cares about their cars and wants them cleaned by a
+                                    company that has reasonable pricing and treats the cars like their own!”</p>
+                                <h3>Muntasir Abedin</h3>
+                            </div>
+                            <div class="single-testimonial-item">
+                                <p>“After getting a crack in my window that started to spread, I was worried I would
+                                    have to get my whole front window replaced. After River SideWash took a look at
+                                    my
+                                    car, with just a few quick tricks, they were able to stop the crack from
+                                    spreading
+                                    and minimize the visual look of a the crack. As well, I never knew my car could
+                                    look
+                                    so clean both inside and out! Looked good as new! River SideWash’s services are
+                                    top-notch!”</p>
+                                <h3>Erin Kurvits</h3>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="recent">
+        <div class="container">
+            <h2 class="ourServices">Recent Work</h2>
+
+            <div class="gallery">
+                <div class="img-container" data-index="0">
+                    <img src="images/car0.jpg" alt="Image 1">
+                    <div class="expand-icon"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+                </div>
+                <div class="img-container" data-index="1">
+                    <img src="images/car1.jpg" alt="Image 2">
+                    <div class="expand-icon"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+                </div>
+                <div class="img-container" data-index="2">
+                    <img src="images/car2.jpg" alt="Image 3">
+                    <div class="expand-icon"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+                </div>
+                <div class="img-container" data-index="3">
+                    <img src="images/car3.jpg" alt="Image 4">
+                    <div class="expand-icon"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+                </div>
+                <div class="img-container" data-index="4">
+                    <img src="images/car4.jpg" alt="Image 5">
+                    <div class="expand-icon"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+                </div>
+                <div class="img-container" data-index="5">
+                    <img src="images/car5.jpg" alt="Image 6">
+                    <div class="expand-icon"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+                </div>
+                <div class="img-container" data-index="6">
+                    <img src="images/car6.jpg" alt="Image 7">
+                    <div class="expand-icon"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+                </div>
+                <div class="img-container" data-index="7">
+                    <img src="images/car7.jpg" alt="Image 8">
+                    <div class="expand-icon"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+                </div>
+                <div class="img-container" data-index="8">
+                    <img src="images/car8.jpg" alt="Image 9">
+                    <div class="expand-icon"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="carousel">
+            <span class="carousel-close">&times;</span>
+            <img src="" alt="Selected Image">
+            <span class="carousel-arrow left">&#10094;</span>
+            <span class="carousel-arrow right">&#10095;</span>
+            <div class="carousel-counter"></div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img id="logo-footer" src="images/logo.png" alt="Logo">
+                <p id="aboutUs-footer">Riverside Wash Company is your premier destination for top-notch car detailing
+                    services. We take pride in providing meticulous attention to detail to ensure your vehicle looks as
+                    good as new.</p>
+            </div>
+            <div class="footer-services">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="services/car-detailing.html">Car Detailing</a></li>
+                    <li><a href="services/truck-wash.html">Truck wash</a></li>
+                    <li><a href="services/exterior-house.html">Exterior House</a></li>
+                    <li><a href="services/patio.html">Patio</a></li>
+                    <li><a href="services/driveway.html">Driveway</a></li>
+                    <li><a href="services/walkway.html">Walkway</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><a href="mailto:example@email.com">Email: example@email.com</a></li>
+                    <li><a href="tel:+1234567890">Phone: (123) 456-7890</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2023 All Rights Reserved</p>
+        </div>
+    </footer>
+
+
+    <script src="recent.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="testimonial.js"></script>
+    <script src="script.js"></script>
+    <script src="menu.js"></script>
+</body>
+
+</html>
